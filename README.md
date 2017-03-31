@@ -70,14 +70,17 @@ $scope.stopuhf = function(){
 
 识别m1卡（s50）
 
+<pre><code>
 woody.plugins.PdaPlugin.m1(function(data){
   alert(data);
 },function(err){
   alert(err);
 });
+</code></pre>
 
 识别cpu卡（复旦cpu）
 
+<pre><code>
 $scope.cpu = function(){
     woody.plugins.PdaPlugin.cpu(function(data){
       alert(data);
@@ -85,9 +88,11 @@ $scope.cpu = function(){
       alert(err);
     });
 }
+</code></pre>
 
 识别uhf标签（超高频功能）
 
+<pre><code>
 $scope.uhf = function(){
     woody.plugins.PdaPlugin.uhf(function(data){
       if(data != "")
@@ -104,3 +109,4 @@ $scope.stopuhf = function(){
       alert(err);
     });
 }
+</code></pre>
