@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="PdaPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>PdaPlugin</name>
+    <js-module name="PdaPlugin" src="www/PdaPlugin.js">
+        <clobbers target="woody.plugins.PdaPlugin" />
+    </js-module>
+
+    <platform name="android">
+    	<source-file src="res/raw/msg.mp3" target-dir="res/raw"/>  
+        <source-file src="src/android/com/woody/plugins/pda/Pda.java" target-dir="src/com/woody/plugins/pda"/>
+        <source-file src="src/android/com/woody/plugins/pda/Util.java" target-dir="src/com/woody/plugins/pda"/>
+        <source-file src="src/android/com/android/rfid/PSAM.java" target-dir="src/com/android/rfid"/>
+        <source-file src="src/android/com/android/rfid/Tools.java" target-dir="src/com/android/rfid"/> 
+        <source-file src="src/android/com/android/rfid/RfidManager.java" target-dir="src/com/android/rfid"/> 
+  		<source-file src="libs/UHF.jar" target-dir="libs"/>
+  		<source-file src="libs/SerialPort.jar" target-dir="libs"/>
+  		<source-file src="libs/armeabi/libdevapi.so" target-dir="libs/armeabi"/>
+  		<source-file src="libs/armeabi/libirdaSerialPort.so" target-dir="libs/armeabi"/>
+  		<source-file src="libs/armeabi/libPSAM.so" target-dir="libs/armeabi"/>
+  		<source-file src="libs/armeabi-v7a/libdevapi.so" target-dir="libs/armeabi-v7a"/>
+  		<source-file src="libs/armeabi-v7a/libirdaSerialPort.so" target-dir="libs/armeabi-v7a"/>
+  		<source-file src="libs/armeabi-v7a/libPSAM.so" target-dir="libs/armeabi-v7a"/>
+        <config-file target="res/xml/config.xml" parent="/*">  
+            <feature name="Pda">  
+                <param name="android-package" value="com.woody.plugins.pda.Pda"/>  
+            </feature>  
+        </config-file>  
+    </platform>
+</plugin>
