@@ -3,6 +3,7 @@ cordova-plugin-pda by woody
 
 date:2017-03-31
 
+*******************************
 
 1.The plugin only supports Android devices
 
@@ -16,14 +17,17 @@ date:2017-03-31
 
 Identification M1 card (S50)
 
+<pre><code>
 woody.plugins.PdaPlugin.m1(function(data){
   alert(data);
 },function(err){
   alert(err);
 });
+</code></pre>
 
 Identification of CPU card (Fudan CPU)
 
+<pre><code>
 $scope.cpu = function(){
     woody.plugins.PdaPlugin.cpu(function(data){
       alert(data);
@@ -31,9 +35,11 @@ $scope.cpu = function(){
       alert(err);
     });
 }
+</code></pre>
 
 Identification of UHF tags (UHF)
 
+<pre><code>
 $scope.uhf = function(){
     woody.plugins.PdaPlugin.uhf(function(data){
       if(data != "")
@@ -50,7 +56,7 @@ $scope.stopuhf = function(){
       alert(err);
     });
 }
-
+</code></pre>
 
 1.该插件只支持安卓设备
 
