@@ -7,7 +7,7 @@ date:2017-03-31
 
 1.The plugin only supports Android devices
 
-2.Installation method：cordova plugin add https://github.com/hellowoody/cordova-plugin-pda.git
+2.Installation method：<pre><code>cordova plugin add https://github.com/hellowoody/cordova-plugin-pda.git</code></pre>
 
 3.After installation, you need to modify the class "com.woody.plugins.pda.Util" in "import com.ionicframework.myplugins257081.R;" to “import com.ionicframework.XXXXXX.R;”
 
@@ -60,7 +60,7 @@ $scope.stopuhf = function(){
 
 1.该插件只支持安卓设备
 
-2.安装方法：cordova plugin add https://github.com/hellowoody/cordova-plugin-pda.git
+2.安装方法：<pre><code>cordova plugin add https://github.com/hellowoody/cordova-plugin-pda.git</code></pre>
 
 3.安装后，需要将com.woody.plugins.pda.Util类中的"import com.ionicframework.myplugins257081.R;" 修改为自己的包名如“import com.ionicframework.XXXXXX.R";”
 
